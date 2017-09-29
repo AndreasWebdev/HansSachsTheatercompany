@@ -1,0 +1,58 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald:400,700');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+/* Styles */
+body {
+  background: #1e1e1e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+header {
+  background: orange;
+}
+section[data-section="jumbotron"] {
+  background: #222;
+  background-position: center;
+  background-size: cover;
+}
+section[data-section="jumbotron"] .content {
+  padding: 50px 0px;
+  padding-top: 250px;
+  color: #fff;
+}
+section[data-section="jumbotron"] .content h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section[data-section="jumbotron"] .content h1 {
+  font-size: 2em;
+  font-weight: 300;
+}
+section[data-section="jumbotron"] .content p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+section[data-section="jumbotron"] .content button {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  padding: 7px 20px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  transition: 0.2s ease all;
+} 
+section[data-section="jumbotron"] .content button:hover {
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+footer {
+  background: cyan;
+}
