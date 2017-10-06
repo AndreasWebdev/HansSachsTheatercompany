@@ -1,3 +1,11 @@
 @media screen and (max-width: 480px) {
   /* Mobile Only CSS */
 }
+@media screen and (max-width: 870px) {  
+  header nav[is-mobile="false"] {
+    display: none;
+  }  
+  header nav[is-mobile="true"] {
+    display: block;
+  }
+}

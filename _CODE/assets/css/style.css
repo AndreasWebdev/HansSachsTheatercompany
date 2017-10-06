@@ -11,9 +11,110 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+
+/* HEADER */
 header {
-  background: orange;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 100;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
+header .wrapper {
+  display: flex;
+}
+header .logo {
+  flex: 1;
+  margin: 10px 0;
+}
+header nav[is-mobile="false"] {
+  display: block;
+}
+header nav[is-mobile="true"] {
+  display: none;
+}
+header nav .item {
+  float: left;
+  padding: 10px 15px;
+  transition: opacity 0.2s ease;
+}
+header nav .item:hover {
+  opacity: 0.5;
+}
+header nav .item.active .icon {
+  color: #c0392a;
+  opacity: 1;
+}
+header nav .item .icon {
+  text-align: center;
+  opacity: 0.25;
+  color: #fff;
+}
+header nav .item .icon .material-icons {
+  font-size: 32px;
+}
+header nav .item .text {
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+}
+.mobile-offcanvas {
+  position: fixed;
+  z-index: 101;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #1e1e1e;
+  display:none;
+  opacity: 0;
+  justify-content:center;
+  align-items:center;
+}
+.mobile-offcanvas.show {
+  display: flex !important;
+}
+.mobile-offcanvas nav {
+  width: 200px;
+}
+.mobile-offcanvas nav hr {
+  border: 0;
+  background: rgba(255,255,255,0.5);
+  margin: 0 auto;
+  width: 80px;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mobile-offcanvas nav .item {
+  padding: 20px 0px;
+  transition: opacity 0.2s ease;
+}
+.mobile-offcanvas nav .item:hover {
+  opacity: 0.5;
+}
+.mobile-offcanvas nav .item.active .icon {
+  color: #c0392a;
+  opacity: 1;
+}
+.mobile-offcanvas nav .item .icon {
+  text-align: center;
+  opacity: 0.25;
+  color: #fff;
+}
+.mobile-offcanvas nav .item .icon .material-icons {
+  font-size: 32px;
+}
+.mobile-offcanvas nav .item .text {
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* JUMBOTRON */
 section[data-section="jumbotron"] {
   background: #222;
   background-position: center;
@@ -53,6 +154,8 @@ section[data-section="jumbotron"] .content button:hover {
   color: #fff;
   cursor: pointer;
 }
+
+/* FOOTER */
 footer {
   background: cyan;
 }
