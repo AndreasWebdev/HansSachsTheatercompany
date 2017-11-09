@@ -5,14 +5,15 @@
       <meta charset="utf-8" />
       <title>Die Hans-Sachs Theatercompany</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      
+      <link rel="icon" href="assets/img/favicon.png" />
+
       <!-- Styles -->
       <link rel="stylesheet" href="assets/css/reset.css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/grid.css" />
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="assets/css/mobile.css" />
-      
+
       <!-- Scripts -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="assets/js/headerFix.js"></script>
@@ -22,34 +23,28 @@
       <header>
         <div class="wrapper">
           <div class="logo">
-            <img src="assets/img/logo.png" alt="Hans-Sachs Theatercompany Logo" />
+            <a href="index.htm"><img src="assets/img/logo.png" alt="Hans-Sachs Theatercompany Logo" /></a>
           </div>
           <nav is-mobile="false">
-            <a href="">
+            <a href="#">
               <div class="item active">
                 <div class="icon"><i class="material-icons">home</i></div>
                 <div class="text">Startseite</div>
               </div>
             </a>
-            <a href="">
+            <a href="#about">
               <div class="item">
                 <div class="icon"><i class="material-icons">face</i></div>
                 <div class="text">Über uns</div>
               </div>
             </a>
-            <a href="">
+            <a href="#participate">
               <div class="item">
                 <div class="icon"><i class="material-icons">contact_mail</i></div>
                 <div class="text">Mach mit</div>
               </div>
             </a>
-            <a href="">
-              <div class="item">
-                <div class="icon"><i class="material-icons">theaters</i></div>
-                <div class="text">Das Hans-Sachs Haus</div>
-              </div>
-            </a>
-            <a href="">
+            <a href="#contact">
               <div class="item">
                 <div class="icon"><i class="material-icons">forum</i></div>
                 <div class="text">Kontakt</div>
@@ -67,37 +62,31 @@
       <div class="mobile-offcanvas">
         <nav>
           <div class="item" id="closeMobileMenu">
-            <div class="icon"><i class="material-icons">close</i></div>
+            <div class="icon close"><i class="material-icons">close</i></div>
             <div class="text">Schließen</div>
           </div>
-          
+
           <hr />
-          
-          <a href="">
-            <div class="item active">
+
+          <a href="#">
+            <div class="item">
               <div class="icon"><i class="material-icons">home</i></div>
               <div class="text">Startseite</div>
             </div>
           </a>
-          <a href="">
+          <a href="#about">
             <div class="item">
               <div class="icon"><i class="material-icons">face</i></div>
               <div class="text">Über uns</div>
             </div>
           </a>
-          <a href="">
+          <a href="#participate">
             <div class="item">
               <div class="icon"><i class="material-icons">contact_mail</i></div>
               <div class="text">Mach mit</div>
             </div>
           </a>
-          <a href="">
-            <div class="item">
-              <div class="icon"><i class="material-icons">theaters</i></div>
-              <div class="text">Das Hans-Sachs Haus</div>
-            </div>
-          </a>
-          <a href="">
+          <a href="#contact">
             <div class="item">
               <div class="icon"><i class="material-icons">forum</i></div>
               <div class="text">Kontakt</div>
@@ -105,47 +94,93 @@
           </a>
         </nav>
       </div>
-      
+
       <section data-section="jumbotron" style="background-image: url('assets/img/header_swis.jpg');">
         <div class="wrapper">
-          <div class="content">
+          <img src="assets/img/header_swis.jpg" class="image" data-mobile="true" />
+          <div class="content grid-col-12">
             <h6>Adventure / Comedy</h6>
             <h1>Seid wie ihr seid</h1>
             <p>oder die Suche nach dem Schatz des Hans Sachs</p>
-            <button>Mehr &amp; Aufführungszeiten</button>
+            <a href="detail_swis.htm"><button>Mehr &amp; Aufführungszeiten</button></a>
           </div>
         </div>
       </section>
-      
-      <div class="wrapper">
-      <br /><br />
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+      <section data-section="content-box">
+        <div class="wrapper">
+          <div class="grid-col-12">
+            <h1 id="about">Über uns</h1>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="grid-col-4">
+            <img src="assets/img/indexAbout.jpg" class="fullwidth" alt="Über uns" />
+          </div>
+          <div class="grid-col-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </section>
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+      <section data-section="content-box">
+        <div class="wrapper">
+          <div class="grid-col-12">
+            <h1 id="participate">Mach mit</h1>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="grid-col-4">
+            <img src="assets/img/indexParticipate.jpg" class="fullwidth" alt="Mach mit" />
+          </div>
+          <div class="grid-col-8">
+            <p>Bist du zwischen <strong>?? und ??</strong> Jahre alt? Wolltest du schon immer mal auf der großen Bühne stehen und mal richtig "Theater machen"? Dann kontaktiere uns doch mittels unserem Kontaktformulars! Wir freuen uns auf jede Kontaktaufnahme!</p>
+            <p><strong>Vielleicht stehst auch du schon bald für die Hans Sachs Theater-Company auf der Bühne!</strong></p>
+          </div>
+        </div>
+      </section>
 
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+      <section data-section="content-box">
+        <div class="wrapper">
+          <div class="grid-col-12">
+            <h1 id="contact">Kontakt</h1>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="grid-col-4">
+            <img src="assets/img/indexContact.jpg" class="fullwidth" alt="Kontakt" />
+          </div>
+          <div class="grid-col-8">
+            <form method="get" action="mailto:hi@hanssachs-theater.company">
+              <div class="form-item">
+                <label>Deine E-Mail</label>
+                <input type="email" name="from" placeholder="deine@email.de" />
+              </div>
+              <div class="form-item">
+                <label>Betreff</label>
+                <input type="text" name="subject" placeholder="Kontaktaufnahme" />
+              </div>
+              <div class="form-item">
+                <label>Deine Nachricht</label>
+                <textarea name="body" rows="6"></textarea>
+              </div>
+              <div class="form-item">
+                <input type="submit" value="Absenden" />
+                <div class="help-text">Für das Absenden ist ein kompatibles E-Mail-Programm wie die Email-App, Thunderbird oder Office Outlook nötig! Solltest du so ein Programm nicht installiert haben, kannst du uns auch unter <strong>hi@hanssachs-theater.company</strong> erreichen!</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
-
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.   
-
-Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.   
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
-
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-        <br /><br />
-      </div>
-      
       <footer>
         <div class="wrapper">
-          Footer
+          <div class="footer-content grid-col-12">
+            <img src="assets/img/logo_w.png" class="logo" alt="Hans-Sachs Theatercompany" /><br />
+            <img src="assets/img/logo_emmaus_w.png" class="logo" alt="Hans-Sachs Theatercompany" /><br />
+            <a href="legal.htm">Impressum</a> <a href="security.htm">Datenschutz</a>
+          </div>
         </div>
       </footer>
     </body>

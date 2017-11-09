@@ -3,4 +3,4 @@ Main Line:		digitalt
 				SIL Open Font License (OFL)
 				
 Tagline:		Century Gothic
-				Monotype Corporation
+				Monotype Corporation, Microsoft Standard Schrift

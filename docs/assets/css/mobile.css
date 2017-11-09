@@ -1,11 +1,40 @@
-@media screen and (max-width: 480px) {
-  /* Mobile Only CSS */
+@media screen and (min-width: 510px) {
+  *[data-mobile="true"] {
+    display: none;
+  }
 }
-@media screen and (max-width: 870px) {  
+
+@media screen and (max-width: 870px) {
   header nav[is-mobile="false"] {
     display: none;
-  }  
+  }
   header nav[is-mobile="true"] {
     display: block;
+  }
+  section[data-section="jumbotron"] .content {
+    padding-top: 150px;
+  }
+  .wrapper {
+    display: block;
+  }
+  .wrapper .grid-col-8 {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  /* Mobile Only CSS */
+  section[data-section="jumbotron"] {
+    background: transparent !important;
+  }
+  section[data-section="jumbotron"] .wrapper {
+    width: 100%;
+  }
+  section[data-section="jumbotron"] .content {
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+  }
+  section[data-section="jumbotron"] .image {
+    width: 100%;
   }
 }
