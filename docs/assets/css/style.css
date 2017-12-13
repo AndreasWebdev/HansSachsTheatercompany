@@ -65,6 +65,7 @@ header nav .item .text {
 header nav .item:hover {
   opacity: 0.5;
 }
+/* Mobile Only */
 .mobile-offcanvas {
   position: fixed;
   z-index: 101;
@@ -83,6 +84,10 @@ header nav .item:hover {
 }
 .mobile-offcanvas nav {
   width: 200px;
+  /* Weird Underline Fix */
+}
+.mobile-offcanvas nav * {
+  text-decoration: none;
 }
 .mobile-offcanvas hr {
   border: 0;
